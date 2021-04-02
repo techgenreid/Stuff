@@ -1,0 +1,19 @@
+#BeginTab("IsEmpty==False;TotalQuantity!=0;TabName==Important Information")
+								<table width = "100%">
+										<tr >
+											<td class="Left"><span style="font-size:1.125rem !important;"><b>#Tab.TabName</b></span>
+										</td>
+										</tr>
+                                      
+                  #BeginItem("TestDynamicGrid")
+										#BeginIf("#Item.LineType","")
+										<tr>
+											<td colspan="100">#Item.ItemNotesHtml</td>
+										</tr>
+									#EndIf()
+                 #EndItem()
+                                      
+									</table>
+								</a>
+							</h1>
+ #EndTab()
